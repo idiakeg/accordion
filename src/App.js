@@ -5,7 +5,9 @@ import Questions from "./Questions";
 function App() {
 	return (
 		<div className="app">
-			<h1 className="questions">questions and answers about login</h1>
+			<section>
+				<h1 className="question__header">questions and answers about login</h1>
+			</section>
 			<section>
 				{questions.map((question, index) => (
 					<Questions key={index} {...question} />

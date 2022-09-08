@@ -1,0 +1,66 @@
+.app {
+	padding: 3rem 2rem 4rem;
+	width: min(70rem, 80vw);
+	display: grid;
+	grid-template-columns: 30% 65%;
+	gap: 5%;
+	background-color: white;
+}
+
+@media screen and (max-width: 650px) {
+	.app {
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+	}
+}
+
+.app > * {
+	/* border: 1px solid green; */
+}
+
+section .question__header {
+	margin: 0;
+	text-transform: capitalize;
+	font-weight: 700;
+	color: #3d3a3a;
+}
+
+/* question container */
+.question__container {
+	padding: 1rem;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.question__container p {
+	margin: 0;
+}
+
+.question__container:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
+.question__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.question__title button {
+	border-radius: 50%;
+	border: none;
+	width: 3rem;
+	height: 3rem;
+	color: rgb(15, 176, 240);
+	font-size: 1.5rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.title {
+	font-weight: 600;
+	color: #777272;
+}
+
+.question__body {
+	margin-top: 0.5rem;
+}
