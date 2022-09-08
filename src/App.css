@@ -14,10 +14,6 @@
 	}
 }
 
-.app > * {
-	/* border: 1px solid green; */
-}
-
 section .question__header {
 	margin: 0;
 	text-transform: capitalize;
