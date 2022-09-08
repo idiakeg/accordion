@@ -9,8 +9,8 @@ function App() {
 				<h1 className="question__header">questions and answers about login</h1>
 			</section>
 			<section>
-				{questions.map((question, index) => (
-					<Questions key={index} {...question} />
+				{questions.map((question) => (
+					<Questions key={question.id} {...question} />
 				))}
 			</section>
 		</div>
